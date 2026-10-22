@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://orifbekmansurjonov.uz/assets/og.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230a8dff'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Impact,Arial Black,sans-serif' font-size='40' fill='%23ffffff'>O</text></svg>">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/anton-latin-400-normal.woff2" crossorigin>
-<link rel="preload" as="image" href="assets/film-v3/000.webp">
+<link rel="preload" as="image" href="assets/film-v4/000.webp">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Orifbek Mansurjonov","url":"https://orifbekmansurjonov.uz","sameAs":["https://github.com/Orifbek08"]}</script>
 <style>
 @font-face{font-family:"Anton";src:url(assets/fonts/anton-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -82,16 +82,14 @@ html[data-theme="dark"] .toggle::after{left:5px}
 @media (max-width:760px){.nav__links{display:none}}
 
 /* ---------- hero ---------- */
-.hero{position:relative;height:900vh}
+.hero{position:relative;height:1250vh}
 .hero__stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:#000}
 .film{position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:0 0;will-change:transform}
 .film__shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(20deg,rgba(2,18,40,.62) 0%,rgba(2,18,40,.2) 42%,transparent 66%)}
 .film__txt{position:absolute;left:clamp(18px,5vw,72px);bottom:clamp(70px,15vh,150px);color:#f4efe6;pointer-events:none;max-width:90vw}
 .film__txt small{display:block;letter-spacing:.26em;text-transform:uppercase;font-size:12px;font-weight:500;color:var(--acc2)}
 .film__txt h2{font-weight:600;font-size:clamp(40px,6.2vw,104px);line-height:.98;letter-spacing:-.025em;margin-top:14px;text-shadow:0 6px 40px rgba(0,0,0,.5)}
-.film__txt.t2{opacity:0;color:#0b1424}
-.film__txt.t2 h2{text-shadow:0 4px 30px rgba(255,255,255,.7)}
-.film__txt.t2 small{color:var(--acc)}
+.film__txt.t2{opacity:0}
 .film__hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;letter-spacing:.22em;text-transform:uppercase;font-size:11px;color:rgba(244,239,230,.75)}
 .film__hint em{width:1px;height:38px;background:rgba(244,239,230,.25);position:relative;overflow:hidden}
 .film__hint em::after{content:"";position:absolute;left:0;top:-40%;width:100%;height:40%;background:var(--acc);animation:hint 1.6s cubic-bezier(.7,0,.3,1) infinite}
@@ -451,11 +449,11 @@ html[data-theme="dark"] .card.c3 .card__num{-webkit-text-stroke-color:var(--acc)
   }
 
   /* ---------- scroll film: valley → glass pavilion → laptop → into the screen ---------- */
-  var TRACK={"start":127,"r":[[490.7,227.9,308.4,196.8],[488.4,227.0,312.3,198.8],[486.0,226.0,316.5,201.0],[483.4,224.9,321.0,203.4],[480.7,223.6,325.9,206.1],[477.8,222.2,331.1,209.0],[474.8,220.6,336.5,212.0],[471.7,218.9,342.3,215.3],[468.5,217.1,348.3,218.7],[465.2,215.2,354.6,222.3],[461.8,213.2,361.1,226.1],[458.3,211.1,367.8,230.0],[454.7,208.9,374.7,234.1],[451.1,206.6,381.9,238.3],[447.3,204.2,389.2,242.6],[443.5,201.7,396.6,247.1],[439.6,199.2,404.3,251.6],[435.7,196.6,412.0,256.2],[431.7,193.9,419.9,261.0],[427.7,191.2,427.9,265.8],[423.7,188.4,436.0,270.7],[419.6,185.6,444.1,275.6],[415.5,182.8,452.4,280.6],[411.4,179.9,460.7,285.6],[407.2,177.0,469.0,290.7],[403.1,174.1,477.3,295.8],[399.0,171.2,485.7,300.8],[394.8,168.3,494.0,305.9],[390.7,165.4,502.3,311.0],[386.6,162.5,510.6,316.1],[382.6,159.6,518.8,321.1],[378.5,156.7,527.0,326.2],[374.5,153.9,535.1,331.1],[370.6,151.1,543.1,336.0],[366.7,148.3,551.0,340.9],[362.9,145.5,558.8,345.7],[359.1,142.9,566.4,350.4],[355.4,140.2,573.9,355.0],[351.8,137.7,581.2,359.5],[348.2,135.2,588.4,363.9],[344.8,132.8,595.3,368.1],[341.4,130.4,602.1,372.3],[338.2,128.2,608.6,376.3],[335.1,126.0,614.9,380.1],[332.0,124.0,620.9,383.8],[329.1,122.0,626.7,387.4],[326.4,120.2,632.1,390.7],[323.7,118.5,637.3,393.9],[321.2,116.9,642.2,396.9],[318.9,115.4,646.8,399.7],[316.7,114.1,651.0,402.2],[314.6,112.9,654.9,404.6],[312.7,111.8,658.4,406.7],[311.0,110.9,661.6,408.6],[309.5,110.2,664.3,410.2],[308.2,109.6,666.6,411.5],[307.0,109.2,668.5,412.6],[306.1,109.0,670.0,413.4],[305.3,109.0,671.0,413.9],[304.8,109.2,671.6,414.1],[304.5,109.5,671.7,414.1],[304.4,110.1,671.2,413.7],[304.5,110.8,670.3,412.9],[304.9,111.8,668.9,411.9],[305.5,113.0,666.9,410.4]]};
-  var FN=192, VW=1280, VH=720, frames=new Array(FN), loaded=0;
+  var TRACK={"start":270,"r":[[488.6,289.8,233.4,160.0],[487.2,289.3,234.2,160.5],[485.3,288.7,235.3,161.2],[483.2,288.2,236.8,162.3],[481.1,288.0,238.4,163.4],[479.2,287.9,240.2,164.6],[477.3,287.6,242.0,165.9],[475.5,286.9,243.9,167.2],[473.9,285.6,245.8,168.5],[472.1,283.3,247.8,169.8],[470.3,280.3,250.0,171.2],[468.3,276.9,252.4,172.7],[466.1,273.4,255.1,174.4],[463.5,270.0,258.3,176.4],[460.6,267.0,261.9,178.8],[457.9,264.2,266.0,181.5],[455.3,261.4,270.5,184.6],[452.8,258.9,275.5,188.0],[450.5,256.3,280.8,191.6],[448.3,253.6,286.5,195.4],[446.0,250.8,292.6,199.6],[443.7,248.0,299.2,204.1],[441.7,244.8,306.5,209.0],[440.4,241.4,314.3,214.3],[439.9,237.8,322.3,219.8],[440.0,233.8,330.8,225.6],[440.8,229.7,339.4,231.3],[442.2,225.0,348.0,237.1],[443.9,219.9,356.6,242.8],[445.4,214.0,365.4,248.6],[446.8,207.4,374.2,254.2],[447.7,200.2,383.2,260.0],[447.7,192.8,392.5,265.9],[446.5,185.3,402.3,272.0],[444.3,177.9,412.7,278.7],[440.9,171.0,423.6,285.5],[436.0,164.6,435.2,292.7],[429.5,158.6,447.5,300.2],[421.2,153.3,460.2,307.8],[411.2,148.4,473.1,315.3],[400.0,143.8,486.0,322.8],[388.4,139.2,498.4,330.0],[377.2,134.7,510.1,336.8],[366.6,129.6,521.8,343.6],[357.0,124.2,533.0,350.0],[348.8,118.4,543.8,356.0],[341.5,112.1,554.7,362.1],[335.2,105.4,565.3,368.2],[329.5,98.6,575.7,374.3],[324.5,92.1,585.8,380.3],[319.7,85.7,595.6,386.1],[315.0,79.6,604.9,391.6],[310.2,73.9,614.1,397.3],[306.0,68.6,622.9,402.6],[302.2,63.4,631.4,408.1],[298.9,58.7,639.4,413.2],[296.4,54.5,646.7,418.1],[294.5,51.0,652.9,422.1],[293.4,48.0,657.9,425.3],[292.9,45.4,662.0,427.8],[292.9,43.1,665.4,430.1],[293.2,40.9,668.1,431.7],[293.5,38.9,670.4,433.2],[293.4,37.3,672.1,434.3],[292.9,36.1,673.5,435.2],[292.3,35.5,674.5,435.8],[291.9,34.9,674.9,436.0],[291.6,34.5,675.1,436.1],[291.2,34.2,675.1,436.0],[290.4,33.6,674.9,435.8],[289.4,32.9,674.9,435.7],[288.1,32.2,674.9,435.7],[286.7,31.5,674.9,435.7],[285.7,30.7,675.0,435.7]]};
+  var FN=344, VW=1280, VH=720, frames=new Array(FN), loaded=0;
   var stage=document.querySelector(".hero__stage"), cv=document.querySelector(".film"), ctx=cv.getContext("2d");
   var scr=document.querySelector(".screen"), inner=document.querySelector(".screen__inner");
-  var st={f:0,zoom:0,scr:0}, W=0,H=0,dpr=1,lastDrawn=-1;
+  var st={f:0,zoom:0,scr:0}, W=0,H=0,dpr=1,lastDrawn=-1,lastImg=null;
   function fit(){
     W=stage.clientWidth;H=stage.clientHeight;dpr=Math.min(window.devicePixelRatio||1,2);
     cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
@@ -467,7 +465,7 @@ html[data-theme="dark"] .card.c3 .card__num{-webkit-text-stroke-color:var(--acc)
   function render(){
     if(!W) return;
     var i=Math.max(0,Math.min(FN-1,Math.round(st.f))), m=cover();
-    if(i!==lastDrawn){var img=pick(i);if(img){ctx.drawImage(img,m.ox*dpr,m.oy*dpr,VW*m.c*dpr,VH*m.c*dpr);lastDrawn=i;}}
+    var img=pick(i);if(img&&(img!==lastImg||lastDrawn<0)){ctx.drawImage(img,m.ox*dpr,m.oy*dpr,VW*m.c*dpr,VH*m.c*dpr);lastImg=img;lastDrawn=i;}
     var rv=rectAt(i), x=rv[0]*m.c+m.ox, y=rv[1]*m.c+m.oy, w=rv[2]*m.c, h=rv[3]*m.c;
     // dive into the screen
     var e=st.zoom, Z=Math.max(W/w,H/h)*1.002, k=1+(Z-1)*e;
@@ -488,31 +486,32 @@ html[data-theme="dark"] .card.c3 .card__num{-webkit-text-stroke-color:var(--acc)
   gsap.set(photoImg,{opacity:0,y:60});
   gsap.set([".hero__meta span",".hero__foot"],{opacity:0});
 
-  var U=3.6/(FN-1); // timeline units per frame
+  var FILM=7, U=FILM/(FN-1), MS=270; // MS = first frame of the office clip
   var film=gsap.timeline({defaults:{ease:"none"},scrollTrigger:{trigger:".hero",start:"top top",end:"bottom bottom",scrub:.8}});
-  film.to(st,{f:FN-1,duration:3.6,onUpdate:render},0)
+  film.to(st,{f:FN-1,duration:FILM,onUpdate:render},0)
       .to(".film__hint",{opacity:0,duration:.2},0)
-      .to(".film__txt.t1",{opacity:0,y:-40,duration:.4},.25)
-      .fromTo(".film__txt.t2",{opacity:0,y:40},{opacity:1,y:0,duration:.25},62*U)
-      .to(".film__txt.t2",{opacity:0,y:-40,duration:.25},100*U)
-      .to(".film__shade",{opacity:0,duration:.4},100*U)
-      // the site lights up on the laptop
-      .to(st,{scr:1,duration:18*U,onUpdate:render},132*U)
-      .to(photoImg,{opacity:1,y:0,duration:.6},140*U)
-      .to(charsIn,{z:0,opacity:1,rotationX:0,duration:.5,stagger:{each:.04,from:"center"}},146*U)
-      .to(".hero__script span",{clipPath:"inset(0 0% 0 0)",duration:.35},176*U)
-      .to(".hero__meta span",{opacity:1,duration:.3},176*U)
+      .to(".film__txt.t1",{opacity:0,y:-40,duration:.4},.3)
+      .fromTo(".film__txt.t2",{opacity:0,y:40},{opacity:1,y:0,duration:.35},80*U)
+      .to(".film__txt.t2",{opacity:0,y:-40,duration:.35},140*U)
+      .to(".film__shade",{opacity:0,duration:.4},160*U)
+      // the site lights up on the office laptop
+      .to(st,{scr:1,duration:8*U,onUpdate:render},MS*U)
+      .to(photoImg,{opacity:1,y:0,duration:.5},(MS+6)*U)
+      .to(charsIn,{z:0,opacity:1,rotationX:0,duration:.45,stagger:{each:.035,from:"center"}},(MS+10)*U)
+      .to(".hero__script span",{clipPath:"inset(0 0% 0 0)",duration:.3},(MS+40)*U)
+      .to(".hero__meta span",{opacity:1,duration:.3},(MS+40)*U)
       // fly into the screen
-      .to(st,{zoom:1,duration:1.25,ease:"power2.inOut",onUpdate:render},3.65)
-      .to(".hero__foot",{opacity:1,duration:.25},4.65)
-      .add(heroTl.duration(3).play(),4.95);
+      .to(st,{zoom:1,duration:1.25,ease:"power2.inOut",onUpdate:render},FILM+.05)
+      .to(".hero__foot",{opacity:1,duration:.25},FILM+1.05)
+      .add(heroTl.duration(3).play(),FILM+1.35);
 
   /* loader shows real frame-loading progress */
   var countEl=document.querySelector(".loader__count"), bar=document.querySelector(".loader__bar"), shown={v:0}, done=false;
-  function onFrame(){loaded++;gsap.to(shown,{v:loaded/FN*100,duration:.4,overwrite:true,onUpdate:function(){countEl.textContent=Math.round(shown.v);bar.style.transform="scaleX("+shown.v/100+")";}});
-    if(loaded===1||lastDrawn<0) render(); if(loaded>=FN) finish();}
-  for(var fi=0;fi<FN;fi++){(function(i){var im=new Image();im.decoding="async";im.onload=onFrame;im.onerror=onFrame;im.src="assets/film-v3/"+("00"+i).slice(-3)+".webp";frames[i]=im;})(fi);}
-  setTimeout(finish,9000);
+  var NEED=Math.min(FN,70);
+  function onFrame(){loaded++;if(!done)gsap.to(shown,{v:Math.min(100,loaded/NEED*100),duration:.4,overwrite:true,onUpdate:function(){countEl.textContent=Math.round(shown.v);bar.style.transform="scaleX("+shown.v/100+")";}});
+    render(); if(loaded>=NEED) finish();}
+  for(var fi=0;fi<FN;fi++){(function(i){var im=new Image();im.decoding="async";im.onload=onFrame;im.onerror=onFrame;im.src="assets/film-v4/"+("00"+i).slice(-3)+".webp";frames[i]=im;})(fi);}
+  setTimeout(finish,12000);
   function finish(){
     if(done) return; done=true;
     gsap.timeline({delay:.35})
