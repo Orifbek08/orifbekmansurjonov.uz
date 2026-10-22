@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://orifbekmansurjonov.uz/assets/og.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230a8dff'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Impact,Arial Black,sans-serif' font-size='40' fill='%23ffffff'>O</text></svg>">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/anton-latin-400-normal.woff2" crossorigin>
-<link rel="preload" as="image" href="assets/seq/000.webp">
+<link rel="preload" as="image" href="assets/film-v3/000.webp">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Orifbek Mansurjonov","url":"https://orifbekmansurjonov.uz","sameAs":["https://github.com/Orifbek08"]}</script>
 <style>
 @font-face{font-family:"Anton";src:url(assets/fonts/anton-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -511,7 +511,7 @@ html[data-theme="dark"] .card.c3 .card__num{-webkit-text-stroke-color:var(--acc)
   var countEl=document.querySelector(".loader__count"), bar=document.querySelector(".loader__bar"), shown={v:0}, done=false;
   function onFrame(){loaded++;gsap.to(shown,{v:loaded/FN*100,duration:.4,overwrite:true,onUpdate:function(){countEl.textContent=Math.round(shown.v);bar.style.transform="scaleX("+shown.v/100+")";}});
     if(loaded===1||lastDrawn<0) render(); if(loaded>=FN) finish();}
-  for(var fi=0;fi<FN;fi++){(function(i){var im=new Image();im.decoding="async";im.onload=onFrame;im.onerror=onFrame;im.src="assets/seq/"+("00"+i).slice(-3)+".webp";frames[i]=im;})(fi);}
+  for(var fi=0;fi<FN;fi++){(function(i){var im=new Image();im.decoding="async";im.onload=onFrame;im.onerror=onFrame;im.src="assets/film-v3/"+("00"+i).slice(-3)+".webp";frames[i]=im;})(fi);}
   setTimeout(finish,9000);
   function finish(){
     if(done) return; done=true;
